@@ -1,0 +1,27 @@
+/* ---------------------------------------------------------------
+Variables
+--------------------------------------------------------------- */
+
+:root {
+  /* Colors Begin */
+  $light-peach: #f5e3d7;
+  $dirty-yellow: #ecaf4e;
+  $light-red: #fc683e;
+  $main-black: #161616;
+  $main-grey: gray;
+  /* Colors End */
+
+  // Font values are not propagating
+  /* Font Values Begin */
+  $primary-font: "Space Mono";
+  $secondary-font: "Josefin Sans";
+  /* Font Values End */
+
+  /* Media Queries Begin */
+  $breakpoint-tablet: 768px;
+  $breakpoint-desktop: 992px;
+  $breakpoint-large-display: 992px;
+  /* Media Queries End */
+}
+
+// Different way to define variables in Sass

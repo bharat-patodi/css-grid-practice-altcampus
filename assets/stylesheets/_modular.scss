@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  // max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.highlight {
+  color: #ecaf4e;
+}
+
+.center {
+  text-align: center;
+}

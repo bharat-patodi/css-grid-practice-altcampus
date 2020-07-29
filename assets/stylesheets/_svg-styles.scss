@@ -1,0 +1,79 @@
+// SVG animation
+.header__nav__nav-items-icon {
+  width: 40px;
+}
+
+.header__nav__nav-items-icon path {
+  fill: transparent;
+  stroke: 10;
+  stroke-width: 1;
+  stroke: #272727;
+}
+
+#rocket {
+  path {
+    // stroke: 10;
+    stroke-width: 0.4;
+    stroke-dasharray: 35;
+    stroke-dashoffset: 0;
+  }
+  &:hover path {
+    animation: animate-rocket 1s linear forwards;
+  }
+}
+
+@keyframes animate-rocket {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 35;
+  }
+  80% {
+    stroke-dashoffset: 70;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 70;
+    fill: palevioletred;
+  }
+}
+
+#sun {
+  path {
+    // stroke: 10;
+    stroke-width: 5;
+    stroke-dasharray: 872;
+    stroke-dashoffset: 0;
+  }
+  &:hover path {
+    animation: animate-sun 1s linear forwards;
+  }
+}
+
+@keyframes animate-sun {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 872;
+  }
+  80% {
+    stroke-dashoffset: 1744;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 1744;
+    fill: #ffc600;
+  }
+}
+
+// Media Queries (Since they are not propagating in specific elements)
+@media (min-width: 768px) {
+  .header__nav--icon-links {
+    display: none;
+  }
+  .header__nav--text-links {
+    display: block;
+  }
+}

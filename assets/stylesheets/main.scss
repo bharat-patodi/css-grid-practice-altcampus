@@ -1,0 +1,22 @@
+/* ---------------------------------------------------------------
+Import partials (Start using @use now)
+--------------------------------------------------------------- */
+
+@import "reset";
+@import "variables";
+@import "base-styles";
+@import "modular";
+@import "header";
+@import "hero";
+@import "skills";
+@import "a-grid-test";
+@import "footer";
+@import "media-queries";
+// @import "svg-styles";
+
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+.a-grid-test {
+  display: grid;
+}

@@ -1,0 +1,46 @@
+// BEGIN = svg background pattern
+// END = svg background pattern
+/* ---------------------------------------------------------------
+My Base Styles
+--------------------------------------------------------------- */
+body {
+  // font-size: calc(16px + 1vw);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  color: gray;
+}
+
+h1,
+h2,
+h3 {
+  color: #272727;
+  // text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+label,
+input {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  &:hover {
+    color: #ecaf4e;
+  }
+}

@@ -1,0 +1,93 @@
+/* ---------------------------------------------------------------
+Skills
+--------------------------------------------------------------- */
+
+.skills {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, 350px);
+
+    // TODO: Use this to create equal height rows
+    // grid-auto-rows: ((350px) * 5/6); // This is weird.
+  }
+  &__card {
+    padding: 2rem;
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+    .skills__card__icon {
+      width: 40px;
+      display: block;
+      margin: 0 auto;
+    }
+    h3 {
+      margin: 2rem 0 1rem 0;
+    }
+  }
+  &__card--donec {
+    grid-column: span 2;
+  }
+  .skills__donec__subtext,
+  .skills__donec__subtext + p {
+    margin-bottom: 20px;
+  }
+  &__card--work-img {
+    overflow: hidden;
+    padding: 0;
+    // This helps clip the image. For this image has to be inline and not block.
+    text-indent: -120%;
+    img {
+      height: 180%;
+    }
+  }
+  &__card--skill-level {
+    background-color: #ecaf4e;
+    h2 {
+      color: white;
+    }
+    &-subtext {
+      color: white;
+      font-weight: 100;
+      margin-bottom: 2rem;
+    }
+
+    .frontend,
+    .backend,
+    .html5 {
+      display: flex;
+      justify-content: space-between;
+      color: #272727;
+      border-bottom: 2px solid black;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      font-size: 0.6rem;
+      font-weight: 900;
+
+      .skill-values {
+        color: white;
+      }
+      // BUG: The border-image is not showing on the bottom and top. It only gets displayed on the sides.
+    }
+  }
+  &__card--interface-design {
+    background-color: #ecaf4e;
+    color: white;
+    h3 {
+      color: white;
+    }
+  }
+  &__card--media-strategy {
+    background-color: #fc683e;
+    color: white;
+    h3 {
+      color: white;
+    }
+  }
+  &__card--mobile-app {
+    background-color: #161616;
+    color: white;
+    h3 {
+      color: white;
+    }
+  }
+}

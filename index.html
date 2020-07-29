@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Grid Practice</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container flex">
+        <div class="navbar__logo">
+          <h1>Stimulus</h1>
+        </div>
+        <!-- Hamburger -->
+        <label for="dropdown"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" name="" class="navbar__dropdown" id="dropdown">
+        <!-- Hamburger End -->
+        <nav class="navbar__nav">
+          <ul class="navbar__nav__ul flex">
+            <li class="navbar__nav__ul__nav-items">
+              <a class="navbar__nav__ul__nav-items__links highlight" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="navbar__nav__ul__nav-items">
+              <a class="navbar__nav__ul__nav-items__links" href="#">About Me</a>
+            </li>
+            <li class="navbar__nav__ul__nav-items">
+              <a class="navbar__nav__ul__nav-items__links" href="#"
+                >Experiences</a
+              >
+            </li>
+            <li class="navbar__nav__ul__nav-items">
+              <a class="navbar__nav__ul__nav-items__links" href="#"
+                >Testimonial</a
+              >
+            </li>
+            <li class="navbar__nav__ul__nav-items">
+              <a class="navbar__nav__ul__nav-items__links" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <article class="grid">
+          <figure>
+            <img src="assets/images/home-img.jpg" alt="" />
+          </figure>
+          <div class="hero__text">
+            <p class="hero__text__subtext">Welcome to my website</p>
+            <h2>
+              Hello, I am <span class="strong">Stimulus</span> currently based
+              in New York city.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              tempore itaque, eius rerum cumque necessitatibus nihil molestiae
+              perferendis porro. Ullam molestiae numquam ex expedita ipsa
+              commodi accusamus aliquam vero ratione.
+            </p>
+            <div>
+              <a href="#" class="hero__btn btn">Get Started</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- TODO: Replace svg calls w internal svgs and change colors-->
+      <section class="skills">
+        <article class="grid">
+          <div class="skills__card skills__card--donec">
+            <h2>Donec auctor</h2>
+            <p class="highlight skills__donec__subtext">
+              Sed vulptate vitae diam quis bebndeuk
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto ducimus, nisi perferendis vitae laudantium voluptatem!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto ducimus, nisi
+            </p>
+          </div>
+          <div class="skills__card skills__card--work-img">
+            <img src="assets/images/about-img.jpg" alt="" />
+          </div>
+          <div class="skills__card skills__card--skill-level">
+            <h2>My Skills</h2>
+            <p class="skills__card--skill-level-subtext">
+              Photoshop, HTML CSS JS, Web Design
+            </p>
+            <div class="frontend">
+              <p>Frontend Design</p>
+              <p class="skill-values">90%</p>
+            </div>
+            <div class="backend">
+              <p>Backend Processing</p>
+              <p class="skill-values">70%</p>
+            </div>
+            <div class="html5">
+              <p>HTML5 & CSS3</p>
+              <p class="skill-values">80%</p>
+            </div>
+          </div>
+          <div class="skills__card skills__card--interface-design center">
+            <figure>
+              <img
+                src="assets/images/computer.svg"
+                class="skills__card__icon"
+                alt=""
+              />
+            </figure>
+            <h3>Interface Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae sit ex nostrum?
+            </p>
+          </div>
+          <div class="skills__card skills__card--media-strategy center">
+            <figure>
+              <img
+                src="assets/images/send.svg"
+                alt=""
+                class="skills__card__icon"
+              />
+            </figure>
+            <h3>Media Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae sit ex nostrum?
+            </p>
+          </div>
+          <div class="skills__card skills__card--mobile-app center">
+            <figure>
+              <img
+                src="assets/images/spreadsheet.svg"
+                alt="Spreadsheet"
+                class="skills__card__icon"
+              />
+            </figure>
+            <h3>Mobile App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae sit ex nostrum? Maxime ut odit cupiditate iure? Esse,
+              quidem corporis.
+            </p>
+          </div>
+          <div class="skills__card skills__card--coding center">
+            <figure>
+              <img
+                src="assets/images/html5.svg"
+                alt="HTML5"
+                class="skills__card__icon"
+              />
+            </figure>
+            <h3>Coding</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae sit ex nostrum? Maxime ut odit cupiditate iure? Esse,
+              quidem corporis.
+            </p>
+          </div>
+        </article>
+      </section>
+    <div class="a-grid-test">
+        <div class="experience-image">
+          <figure>
+            <img src="assets/images/experience-img.jpg" alt="" />
+          </figure>
+        </div>
+        <section class="experience past-details">
+          <h2>My Experiences</h2>
+          <p class="subtext">Previous companies and my tasks</p>
+          <ul>
+            <li>
+              <h3>Graphic Designer
+                <span class="timespan">2014 Jul-2015 Sep</span></h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+          <ul>
+            <li>
+              <h3>Web Designer
+                <span class="timespan">2015 Oct-2017 Jan</span>
+              </h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="education past-details">
+          <h2>My Education</h2>
+          <p class="subtext">In cursus orci what wht what</p>
+          <ul>
+            <li>
+              <h3>Master in Design
+              <span class="timespan">2012 Jan - 2014 May</span></h3>
+              <p>EtiamEtiam Etiam Etiam Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+            <li>
+              <h3>Bachelor of Arts
+              <span class="timespan">2008 May - 2011 Dec</span></h3>
+              <p>EtiamEtiam Etiam Etiam Lorem ipsum dolor sit amet consectetur.</p>
+            </li>
+          </ul>
+        </section>
+        <div class="education-image">
+          <figure>
+            <img src="assets/images/education-img.jpg" alt="Education">
+          </figure>
+        </div>
+        <section class="contact-form">
+          <h2>Say hello...</h2>
+          <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form action="">
+            <label for=""></label>
+            <input type="text" name="" id="" placeholder="Your Name">
+            <label for=""></label>
+            <input type="email" name="" id="" placeholder="Your Email">
+            <label for=""></label>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Write Your Message..."></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </section>
+        <div class="contact-image">
+          <figure>
+            <img src="assets/images/contact-img.jpg" alt="">
+          </figure>
+        </div>
+        <section class="contact-details">
+          <h3>Visit My Office</h3>
+          <address>456 Purani Gali ****, Purani York City, Java</address>
+          <h3>Contact</h3>
+          <div class="flex">
+            <img src="assets/images/phone.svg" alt="">
+            <p> 01-0110-0220</p>
+          </div>
+          <div class="flex">
+            <img src="assets/images/mail.svg" alt="">
+            <p class="highlight"> hello@company.co</p>
+          </div>
+          <div class="flex">
+            <img src="assets/images/world.svg" alt="">
+            <p class="highlight"> company.co</p>
+          </div>
+        </section>
+        <section class="map-location">
+          <!-- iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.6391103405017!2d-122.08624618556615!3d37.422004140151465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sin!4v1596008000813!5m2!1sen!2sin"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </section>
+    </div>
+    </main>
+    <footer>
+      <p>Coyright &#x00A9;2016 Your Co. | Design: <span class="highlight">whocares</span></p>
+      <nav>
+        <ul>
+          <li><a href="#">
+            <img src="assets/images/facebook.svg" alt="">
+          </a></li>
+          <li><a href="#">
+            <img src="assets/images/twitter.svg" alt="">
+          </a></li>
+          <li><a href="#">
+            <img src="assets/images/google-plus.svg" alt="">
+          </a></li>
+          <li><a href="#">
+            <img src="assets/images/dribbble.svg" alt="">
+          </a></li>
+          <li><a href="#">
+            <img src="assets/images/linkedin.svg" alt="">
+          </a></li>
+        </ul>
+      </nav>
+      <p>
+        Icons made by
+        <a
+        href="https://www.flaticon.com/authors/pixel-perfect"
+        title="Pixel perfect"
+        >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> and my svg sweat.
+      </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/43da756c39.js" crossorigin="anonymous"></script>
+  </body>
+</html>
